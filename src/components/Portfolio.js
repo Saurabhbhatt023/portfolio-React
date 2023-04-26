@@ -1,9 +1,8 @@
 import React from 'react'
-import Javascript from "../assets/Javascript.png"
-import Weater from "../assets/Weater.png"
-import Clock from "../assets/Clock.png"
-import reactW from "../assets/react.png"
-
+import youtube from "../assets/youtubelite.png"
+import foodapp from "../assets/food-app.png"
+import youtubelive from "../assets/youtube-live.png"
+import portfolio from "../assets/portfolio.png"
 
  
 
@@ -16,26 +15,30 @@ import reactW from "../assets/react.png"
 
              { 
                id : 1  ,
-               src : Clock ,
-               href: "//https://linkedin.com",
+               src : foodapp,
+               href: "https://insta-food-order.netlify.app/",
+               gitcode :"https://github.com/Saurabhbhatt023/Insta-Food-Ordering-App",
             
                
              },
              { 
               id : 2  ,
-              src : Weater ,
-              href: "https://linkedin.com",
+              src :  youtubelive ,
+              href: "https://live-chat-youtube.netlify.app",
+              gitcode: "https://github.com/Saurabhbhatt023/LiveChatYoutubeApp",
         
             },
             { 
               id :  3 ,
-              src : Javascript ,
-              href: "https://linkedin.com",
+              src : portfolio ,
+              demo: "https://my-portfolio-saurabh.netlify.app",
+              gitcode : "https://github.com/Saurabhbhatt023/Portfolio-React" ,
             },
             { 
               id : 4  ,
-              src : reactW,
-              href: "https://643e84cfda80664dd6b00764--harmonious-truffle-92f5d4.netlify.app/",
+              src : youtube,
+              href: "https://youtube-lite-app023.netlify.app",
+              gitcode : "https://github.com/Saurabhbhatt023/youtube-clone"
             },
 
         ]
@@ -59,7 +62,7 @@ import reactW from "../assets/react.png"
 
                         
               { 
-               portfolios.map( ( { id , src , href}) => (
+               portfolios.map( ( { id , src , href ,gitcode}) => (
                 
                 <div  key = {id }className='shadow-md shadow-gray-600 rounded-lg'> 
                 <img  src={src} alt = " " className='rounded-md duration-200 hover:scale-105'></img>
@@ -67,7 +70,9 @@ import reactW from "../assets/react.png"
                    <button onClick = { function () {
                         window.location.href=href
                    }} className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-blue-600'> Demo </button>
-                   <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105  text-blue-600'>Code </button>
+                   <button onClick = { function () {
+                        window.location.href=gitcode
+                   }}  className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105  text-blue-600'>Code </button>
                 </div>
                </div>
                  
